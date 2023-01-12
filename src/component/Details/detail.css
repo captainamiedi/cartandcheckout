@@ -1,0 +1,18 @@
+.details_main_container {
+    padding: 1rem 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details_img {
+    width: 50%;
+    height: auto;
+}
+
+.text-space {
+    padding: .5rem 0px;
+}
+
+.details_btn {
+    padding-top: 1rem;
+}
