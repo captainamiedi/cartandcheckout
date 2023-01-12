@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./detail.css";
 import { ProductContext } from "../../context";
 import Typography from "@mui/material/Typography";
@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 import { useParams } from "react-router-dom";
 
 export default function Details() {
-  const { giftCards, handleAddToCart } = useContext(ProductContext);
+  const { giftCards, handleAddToCart, handleGiftCardAsset } = useContext(ProductContext);
   const {id} = useParams()
   const { img, productName, description, 
     productId, denominationType, 
@@ -14,8 +14,11 @@ export default function Details() {
     maxSenderDenomination, minRecipientDenomination,
     minSenderDenomination, price
    } =giftCards[id];
-  // console.log(giftCard, "gift card");
-  console.log(id, 'params id');
+  
+   useEffect(() => {
+    handleGiftCardAsset()
+   }, [])
+   
   return (
     <div className="details_main_container">
       <div>

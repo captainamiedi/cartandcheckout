@@ -6,14 +6,20 @@ export const ProductContext = React.createContext();
 export const ProductProvider = ({ children }) => {
   const [giftCards, setGiftCards] = useState([]);
   const [cartData, setCartData] = useState([]);
-  const [cartTotal, setCartTotal] = useState(0)
+  const [cartTotal, setCartTotal] = useState(0);
+  const [isLoading, setIsLoading] = useState(false)
 
+  const handleGiftCardAsset = () => {
+    setIsLoading(true)
+    getGiftCardAsset().then((data) => {
+      setGiftCards(data.content);
+      setIsLoading(false)
+    });
+  }
+  
   useEffect(() => {
     // get all gift cards from API call
-    getGiftCardAsset().then((data) => {
-      console.log(data, "from product list");
-      setGiftCards(data.content);
-    });
+    handleGiftCardAsset()
 
     // get cart data stored in local storage
     const getCartGiftCards = localStorage.getItem("cartData");
@@ -113,6 +119,8 @@ export const ProductProvider = ({ children }) => {
         decrementQuality,
         cartTotal,
         clearCart,
+        handleGiftCardAsset,
+        isLoading
       }}
     >
       {children}
