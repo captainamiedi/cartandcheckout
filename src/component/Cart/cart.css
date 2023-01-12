@@ -58,6 +58,10 @@
     width: 165;
 }
 
+.cart_description_container {
+    max-width: 31.25rem;
+}
+
 /* view for small devices */
 @media screen and (max-width: 480px) {
     .cartlist_container {

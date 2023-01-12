@@ -19,7 +19,7 @@ export default function CartItem(props) {
                 alt={productName}
             />
 
-            <CardContent>
+            <CardContent className='cart_description_container'>
                 <div>
                 <Typography variant="subtitle1" component="div">
                     {`$${price}`}
