@@ -16,3 +16,21 @@
 .details_btn {
     padding-top: 1rem;
 }
+
+/* view for small devices */
+@media screen and (max-width: 480px) {
+    .details_main_container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .details_img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* view for tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
