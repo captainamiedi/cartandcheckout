@@ -23,16 +23,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 The project is Frontend Challenge to test proficiency with JavaScript, HTML, CSS and React. It's a simple product to cart process in an e-commerce application.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-* [![React][React.js]][React-url]
+* [React.js](https://github.com/facebook/create-react-app)
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) & [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
+* [Material UI](https://mui.com/material-ui/getting-started/overview/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
