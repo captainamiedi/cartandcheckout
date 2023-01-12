@@ -45,7 +45,8 @@ export const ProductProvider = ({ children }) => {
       product.inCart = true;
       product.count = 1;
       product.total = product.price;
-      setGiftCards([...giftCards, product]);
+      tempProduct[id] = product
+      setGiftCards(tempProduct);
   
       setCartData([...cartData, product]);
     } else {
@@ -56,7 +57,8 @@ export const ProductProvider = ({ children }) => {
       tempCart[cartIndex] = cartProduct
       setCartData(tempCart)
       product.inCart = true;
-      setGiftCards([...giftCards, product]);
+      tempProduct[id] = product
+      setGiftCards(tempProduct);
     }
   };
   const handleRemoveToCart = (id) => {

@@ -39,9 +39,11 @@ function ResponsiveAppBar({children}) {
             Gift Card Shop
           </Typography>
           <div className='cart_badge_container'>
-            <Badge badgeContent={cartData?.length} color="success" onClick={handleGoToCart}>
-              <ShoppingCartIcon color="action" />
-            </Badge>
+            <IconButton onClick={handleGoToCart}>
+              <Badge badgeContent={cartData?.length} color="success">
+                <ShoppingCartIcon color="action" />
+              </Badge>
+            </IconButton>
           </div>
         </Toolbar>
       </AppBar>
