@@ -67,7 +67,7 @@ _From your command line._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Run Test
+<!-- Run Test -->
 ### Test
 1. Install NPM packages
    ```sh
@@ -87,7 +87,7 @@ Run Test
 - Since there is no API to store cart date to database, if the page is refreshed, I didn't handle tracking the data that is in cart already.
 
 <!-- Improvement -->
-
+## Improvement
 - Implement Pagination
 - Implement cache. these will prevent calling the API several times since the data doesn't change often which will improve the performance
 - Use React lazy loading to improve performance
