@@ -13,9 +13,11 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#installation">Test</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Design Decision and Trade offs</a></li>
+    <li><a href="#usage">Design Decision and Trade offs</a><li>
+    <li><a href="#usage">Improvement</a><li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -66,7 +68,7 @@ _From your command line._
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 Run Test
-### Run Test
+### Test
 1. Install NPM packages
    ```sh
    npm install
@@ -83,6 +85,12 @@ Run Test
 
 ### Tradeoff
 - Since there is no API to store cart date to database, if the page is refreshed, I didn't handle tracking the data that is in cart already.
+
+<!-- Improvement -->
+
+- Implement Pagination
+- Implement cache. these will prevent calling the API several times since the data doesn't change often which will improve the performance
+- Use React lazy loading to improve performance
 
 
 <!-- CONTACT -->
