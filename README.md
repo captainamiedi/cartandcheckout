@@ -54,6 +54,8 @@ _From your command line._
 2. Go into the repository directory
    ``` cd cartandcheckout```
 
+3. create .env on the root of the folder. copy what is in .env.example
+
 3. Install NPM packages
    ```sh
    npm install
@@ -62,6 +64,15 @@ _From your command line._
    ``` npm start ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+Run Test
+### Run Test
+1. Install NPM packages
+   ```sh
+   npm install
+   ```
+2. Start the test
+    ``` npx cypress open ```
 
 <!-- Design Decisions and TradeOffs -->
 

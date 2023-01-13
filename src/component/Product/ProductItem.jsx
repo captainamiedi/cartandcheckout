@@ -21,6 +21,7 @@ export default function ProductItem(props) {
         height="200"
         image={img}
         onClick={handleDetailsComponent}
+        id='giftCardImg'
       />
         <CardContent onClick={handleDetailsComponent}>
         <Grid item xs={12} sm container>
@@ -46,8 +47,8 @@ export default function ProductItem(props) {
 
         </CardContent>
         <CardActions>
-            {inCart ? <Button variant="outlined">In Cart</Button> : <Button onClick={() => handleAddToCart(index)} variant='contained'>Add to Cart</Button>}
-            {inCart ? <Button onClick={() => handleRemoveToCart(index)}>Remove</Button> : null }
+            {inCart ? <Button variant="outlined" id='inCartBtn'>In Cart</Button> : <Button id='AddToCartBtn' onClick={() => handleAddToCart(index)} variant='contained'>Add to Cart</Button>}
+            {inCart ? <Button id='RemoveFromCartBtn' onClick={() => handleRemoveToCart(index)}>Remove</Button> : null }
         </CardActions>
     </Card>
   )

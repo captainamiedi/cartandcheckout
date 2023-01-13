@@ -20,7 +20,7 @@ export default function Details() {
    }, [])
    
   return (
-    <div className="details_main_container">
+    <div className="details_main_container" id='detailsContainer'>
       <div>
         <img src={img} alt={productName} className='details_img' />
       </div>
